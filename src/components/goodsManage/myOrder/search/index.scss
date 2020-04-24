@@ -1,0 +1,109 @@
+@import '../../../../style/main.scss';
+.myorderCateWrap{
+  .head{
+    border-bottom: 2px solid #e1e1e1;
+    padding-right: 20px;
+    font-size: 12px;
+    color: #5E625E;
+    .recycle{
+      @include font(12px, $font-color);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .icon{
+        font-size: 15px;
+        margin-right: 5px;
+      }
+    }
+    position: relative;
+    .line{
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background: $theme-color3;
+      width: 120px;
+      transition: all .5s ease-in;
+    }
+    .classfiy{
+      .item{
+        width: 120px;
+        text-align: center;
+        color: #5E625E;
+        font-size: 12px;
+        height: 40px;
+        padding: 10px 0;
+        cursor: pointer;
+        .itemWrap{
+          width: 100%;
+          text-align: center;
+        }
+        span{
+          color: #ff7300;
+        }
+      }
+      .item:not(:last-child){
+        .itemWrap{
+          border-right: 1px solid #e1e1e1;
+        }
+      }
+    }
+  }
+  .active{
+    color: #FF7300 !important;
+  }
+  .bgActive{
+    background: #FF7300 !important;
+    color: #fff;
+  }
+  .searchWrap{
+    padding: 10px 30px;
+    .inputWrap{
+      .searchBtn{
+        color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: $theme-color3;
+        font-size: 12px;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      input{
+        @include wh(196px, 30px);
+        border: 1px solid #e1e1e1;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 10px;
+      }
+      input::-webkit-input-placeholder{
+        font-size: 12px;
+        color: #ADADAD;
+      }/*webkit 内核浏览器*/
+      input::-moz-placeholder{
+        font-size: 12px;
+        color: #ADADAD;
+      }/*Mozilla Firefox 19+*/
+      input:-moz-placeholder{
+        font-size: 12px;
+        color: #ADADAD;
+      }/*Mozilla Firefox 4 to 18*/
+      input:-ms-input-placeholder{
+        font-size: 12px;
+        color: #ADADAD;
+      }/*Internet Explorer 10+*/
+    }
+  }
+  .timeChoose{
+    padding: 10px 30px;
+    font-size: 12px;
+    color: #ADADAD;
+    .item{
+      background: #f4f4f4;
+      padding: 3px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}

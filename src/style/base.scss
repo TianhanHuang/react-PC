@@ -1,0 +1,29 @@
+/*flex布局*/
+.flex_dom{display: flex!important;display: -webkit-box!important;display: -webkit-flex!important;}
+.flex_column{display: flex!important;display: -webkit-box!important;display: -webkit-flex!important;flex-direction: column;-webkit-flex-direction: column;}
+.flex_1{flex: 1;-webkit-flex:1;display: block;min-width: 0;}
+.flex_2{flex: 2;-webkit-flex:2;display: block;min-width: 0;}
+.flex_3{flex: 3;-webkit-flex:3;display: block;min-width: 0;}
+.flex_4{flex: 4;-webkit-flex:4;display: block;min-width: 0;}
+.flex_5{flex: 5;-webkit-flex:5;display: block;min-width: 0;}
+.flex_item_between{justify-content: space-between;-webkit-justify-content: space-between;}
+.flex_item_around{justify-content: space-around;-webkit-justify-content: space-around;}
+.flex_item_mid{align-items:center;-webkit-align-items: center;}
+.flex_item_stretch{align-items: stretch;-webkit-align-items: stretch;}
+.flex_item_center{ justify-content:center;-webkit-justify-content:center;}
+.flex_item_end{justify-content: flex-end;-webkit-justify-content:flex-end;}
+.flex_wrap{flex-wrap: wrap;-webkit-flex-wrap: wrap;}
+
+/*间距*/
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 10px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+.mr30{margin-right: 30px;}
+.mr40{margin-right: 40px;}
+.mr60{margin-right: 60px;}

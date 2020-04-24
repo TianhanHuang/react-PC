@@ -1,0 +1,330 @@
+@import '../../../style/main.scss';
+.cashierWrap{
+  .selectActive{
+    background: white !important;
+    color: $theme-color3 !important
+  }
+  .getSmsCodeWrap{
+    height: 100%;
+  }
+  .content{
+    padding-top: 70px;
+    .contentLeft{
+      width: 24%;
+      .contentLeftTop{
+        background: white;
+        padding: 15px 15px 30px 15px;
+        height: 240px;
+      .title{
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        .line{
+          @include wh(3px, 14px);
+          background: #FF8008;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+      .itemWrap{
+        margin-top: 15px;
+        .item{
+          margin-top: 10px;
+          @include font(12px, #5e625e, '');
+        }
+        .specel{
+          color: $theme-color3;
+        }
+        .item:nth-child(4){
+          margin-top: 30px;
+        }
+      }
+    }
+      .tips{
+        font-size: 10px;
+        color: #EA2717;
+        padding-left: 10px;
+      }
+    }
+    .contentRight{
+      background: white;
+      width: 75%;
+      padding: 15px;
+      .bankWrap{
+        background: #FFF8ED;
+        padding: 20px 10px;
+        .pay{
+          font-size: 12px;
+          color: #4A4A4A;
+          .selectIcon{
+            background: #FFFFFF;
+            box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+            border-radius: 5px;
+            @include wh(16px, 16px);
+            font-size: 16px;
+            color: $theme-color3;
+            margin-right: 10px;
+            line-height: 16px;
+          }
+        }
+        .selectsWrap{
+          .enterprise,.person{
+            i{
+              font-size: 16px;
+              margin-right: 2px;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            @include wh(200px, 30px);
+            background: #F7F9F9;
+            font-size: 12px;
+            &.active{
+              background: #fff;
+              color: $theme-color3;
+            }
+          }
+        }
+        .search{
+          background: white;
+          padding: 10px;
+          text-align: right;
+          .selectIcon{
+            background: #FFFFFF;
+            box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+            border-radius: 5px;
+            @include wh(16px, 16px);
+            font-size: 16px;
+            color: $theme-color3;
+            margin-right: 10px;
+            line-height: 16px;
+          }
+        }
+        .listWrap2{
+          padding: 22px 17px !important;
+        }
+        .zhifubao{
+          padding-top: 20px !important;
+          padding-bottom: 36px !important;
+          .payBoxWrap{
+            display: flex;
+            position: relative;
+            left: 271px;
+            width: 440px;
+            .codeImg{
+              margin-right: 40px;
+              img{
+                width: 160px;
+                height: 160px;
+              }
+              p{
+                font-size:12px;
+                font-family:PingFang-SC-Regular,PingFang-SC;
+                font-weight:400;
+                color:rgba(37,37,37,1);
+                margin-top: 10px;
+                text-align: center;
+              }
+            }
+            .tips{
+              width:208px;
+              height:126px;
+              background:rgba(255,255,255,1);
+              box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);
+              padding: 15px;
+              p{
+                font-size:12px;
+                font-family:PingFang-SC-Regular,PingFang-SC;
+                font-weight:400;
+                color:rgba(173,173,173,1);
+                line-height:17px;
+              }
+            }
+          }
+        }
+        .listWrap{
+          width: 100%;
+          background: white;
+          padding: 0 20px 20px 20px;
+          flex-wrap: wrap;
+          overflow: hidden;
+          .showMore{
+            cursor: pointer;
+            width: 100px;
+            height: 26px;
+            border: 1px solid #e1e1e1;
+            color: $theme-color3;
+            text-align: center;
+            line-height: 26px;
+            margin-left: 150px;
+            border-radius: 5px;
+            margin-top: 20px;
+          }
+          .addCard{
+            color: $theme-color3;
+            cursor: pointer;
+          }
+          .payBox{
+            width: 520px;
+            background: #FFFFFF;
+            // border: 1px solid #E1E1E1;
+            border-bottom: 1px solid #f4f4f4;
+            height: 50px;
+            font-size: 12px;
+            color: #5e625e;
+            padding-left: 20px;
+            cursor: pointer;
+            &.active{
+              box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);
+            }
+            .selectIcon{
+              background: #FFFFFF;
+              box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+              border-radius: 5px;
+              @include wh(16px, 16px);
+              font-size: 16px;
+              color: $theme-color3;
+              margin-right: 10px;
+              line-height: 16px;
+            }
+            .bankImg{
+              width: 96px;
+              height: 20px;
+              margin-right: 35px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            p{
+              margin-right: 10px;
+            }
+            .card{
+              background: #FFAE2B;
+              border-radius: 2px;
+              margin-right:5px;
+              color: white;
+              padding: 1px 2px;
+            }
+            .fast{
+              background: #A7C532;
+              border-radius: 2px;
+              color: white;
+              padding: 1px 2px;
+              margin-right: 5px;
+            }
+          }
+          .item{
+            .imgBox{
+              @include wh(150px, '');
+              border: 1px solid #e1e1e1;
+              margin-right: 10px;
+              cursor: pointer;
+              img{
+                display: block;
+              }
+            }
+            .imgBox:nth-child(5n){
+              margin-right: 0;
+            }
+          }
+        }
+        .moreShow{
+          cursor: pointer;
+          background: white;
+          text-align: center;
+          height: 60px;
+          line-height: 60px;
+          font-size: 12px;
+          color: #FF8008;
+        }
+      }
+      .btns{
+        margin-top: 26px;
+        .confirmPay{
+          @include wh(140px, 45px);
+          background: $theme-color3;
+          color: white;
+          border-color: $theme-color3;
+          margin-right: 50px;
+          &:hover{
+            border-color: $theme-color3;
+          }
+        }
+        .cancelPay{
+          @include wh(140px, 45px);
+          background: #E1E1E1;
+          color: #5e625e;
+          border-color: #e1e1e1;
+          &:hover{
+            border-color: #e1e1e1;
+          }
+        }
+      }
+      .choosePay{
+        margin-top: 20px;
+        padding-left: 10px;
+        .chooseBox{
+          @include wh(16px, 16px);
+          background: #FFFFFF;
+          box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+        .selectIcon{
+          background: #FFFFFF;
+          box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+          border-radius: 5px;
+          @include wh(16px, 16px);
+          font-size: 16px;
+          color: $theme-color3;
+          margin-right: 10px;
+          line-height: 16px;
+        }
+        .fastPay{
+          font-size: 12px;
+          color: #4A4A4A;
+          margin-right: 15px;
+        }
+        .payBox{
+          background: #FFFFFF;
+          border: 1px solid #E1E1E1;
+          padding: 5px 10px;
+          font-size: 12px;
+          color: #5e625e;
+          margin-right: 20px;
+          .bankImg{
+            width: 96px;
+            height: 20px;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          p{
+            margin-right: 10px;
+          }
+          .card{
+            background: #FFAE2B;
+            border-radius: 2px;
+            margin-right:5px;
+            color: white;
+            padding: 1px 2px;
+          }
+          .fast{
+            background: #A7C532;
+            border-radius: 2px;
+            color: white;
+            padding: 1px 2px;
+            margin-right: 5px;
+          }
+        }
+        .addNew{
+          cursor: pointer;
+          color: $theme-color3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../style/main.scss';
+.personCenterAddressWrap{
+  .areaWrap{
+    .itemTitle{
+      width: 85px;
+      height: 60px;
+      line-height: 60px;
+      span{
+        color: #f5222d;
+        margin-right: 4px;
+      }
+    }
+    .edit{
+      line-height: 60px;
+      color: $theme-color3;
+      cursor: pointer;
+    }
+    p{
+      line-height: 60px;
+      margin-right: 20px;
+    }
+  }
+  .classfiy{
+    border-bottom: 2px solid #e1e1e1;
+    height: 60px;
+    line-height: 60px;
+    .title{
+      @include font(16px, $font-color);
+      font-weight: bold;
+      width: 120px;
+      text-align: center;
+    }
+    .tips{
+      @include font(14px, $font-color);
+      span{
+        color: $theme-color3;
+      }
+    }
+  }
+  .content{
+    .formItem{
+      margin-left: 90px;
+    }
+    padding: 20px;
+    .newAddress{
+      @include font(14px, $theme-color3)
+    }
+    .sendBox{
+      @include wh(450px, 37px);
+      line-height: 37px;
+      background:#F7F9F9;
+      margin-top: 15px;
+      p:first-child{
+        width: 100px;
+        text-align: center;
+        color: #adadad;
+      }
+      p:nth-child(2){
+        color: $font-color
+      }
+    }
+    .saveBtn{
+      margin-left: 90px;
+    }
+  }
+}
+:global{
+  .formWrap{
+    .ant-form-item{
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../style/main.scss';
+.layoutSiderWrapper{
+  margin-right: 10px;
+  .user{
+    background: white;
+    width: 160px;
+    padding: 15px 10px;
+    .userName{
+      .auth,.yuan{
+        font-size: 10px;
+        color: #FF7300;
+        border: 1px solid #FF7300;
+        border-radius: 2px;
+        text-align: center;
+        line-height: 15px;
+        @include wh(15px,15px);
+      }
+      .yuan{
+        color: #57B885;
+        border: 1px solid #57B885;
+      }
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+  }
+  .menu{
+    width: 160px;
+    background: white;
+    font-size: 14px;
+    color: #5E625E;
+    .menu_item{
+      .menu_title{
+        .leftline{
+          width: 3px;
+          background: $theme-color3;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+        }
+        position: relative;
+        padding-left: 25px;
+        padding-right: 15px;
+        height: 40px;
+        cursor: pointer;
+      }
+      .menu_title_children{
+        transition: all .3s ease;
+        background: #F7F9F9;
+        height: 35px;
+        padding-left: 40px;
+        height: 35px;
+        line-height: 35px;
+        cursor: pointer;
+        &.active{
+          background: $theme-color3;
+          color: white;
+        }
+      }
+    }
+  }
+}

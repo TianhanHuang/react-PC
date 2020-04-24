@@ -1,0 +1,11 @@
+@import '../../../../style/main.scss';
+.NodataWrap{
+  padding: 20px;
+  p{
+    @include font(12px, $font-color, center);
+    margin-top: 20px;
+  }
+  img{
+    @include wh(150px, 150px);
+  }
+}

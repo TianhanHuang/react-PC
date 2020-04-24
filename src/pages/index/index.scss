@@ -1,0 +1,13 @@
+@import '../../style/main.scss';
+.testword{
+  @include overflow(2);
+  @include font;
+  // @include position(fixed, .50rem, .30rem)
+}
+.abc{
+  width: 0; 
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent red transparent transparent;
+}

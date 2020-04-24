@@ -1,0 +1,41 @@
+@import '../../../style/main.scss';
+.cashierWrap{
+  padding-top: 65px;
+}
+.resultWrapper{
+  padding: 55px 130px 209px 180px;
+  background: #fff;
+  margin: 0 auto;
+  width: 1200px;
+  .successTips{
+    img{
+      margin-right: 11px;
+    }
+    span{
+      color: $theme-color3
+    }
+  }
+  .returns{
+    margin-top: 20px;
+    padding-left: 41px;
+    p{
+      @include font(12px, #5E625E);
+      margin-right: 8px;
+    }
+    .btn{
+      font-size: 12px;
+    }
+  }
+  .orderInfo{
+    background:rgba(247,249,249,1);
+    padding: 13px 20px 13px 14px;
+    width: 420px;
+    @include font(12px, #5E625E);
+    margin-left: 41px;
+    margin-top: 25px;
+    border-radius: 5px;
+    .icon{
+      color: $theme-color3;
+    }
+  }
+}

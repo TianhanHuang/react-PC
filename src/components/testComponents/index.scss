@@ -1,0 +1,8 @@
+@import '../../style/main.scss';
+.header{
+    // @include position(fixed, 0, null, 0);
+    @include wh(100%, .8rem);
+    background: blue;
+    @include font(.30rem, #fff, center);
+    line-height: .8rem;
+}

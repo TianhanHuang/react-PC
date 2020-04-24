@@ -1,0 +1,114 @@
+@import '../../style/main.scss';
+.personCenterWrap{
+  .headPhoto{
+    padding: 20px;
+    .saveBtn2{
+      margin-left: 110px;
+      margin-top: 30px;
+    }
+    .uploadForm{
+      display: flex;
+      .formLeft{
+        p{
+          @include font(12px, $font-color, '');
+          margin: 15px 0;
+        }
+        .imgBox{
+          @include wh(300px, 300px);
+          background: #F0F2F6;
+          @include font(12px, #adadad, center);
+          line-height: 300px;
+          border: 1px solid #E1E1E1;
+          position: relative;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .line{
+        width: 1px;
+        background: #e1e1e1;
+        height: 300px;
+        align-self: flex-end;
+        margin: 0 30px 0 20px;
+      }
+      .formRight{
+        width: 288px;
+        p{
+          @include font(12px, $font-color);
+        }
+        .imgs{
+          display: flex;
+          margin-top: 30px;
+          .img1{
+            display: flex;
+            flex-direction: column;
+            margin-right: 60px;
+            img{
+              @include wh(100px, 100px);
+            }
+            p{
+              @include font(12px, $font-color, center);
+              margin-top: 10px;
+            }
+          }
+          .img2{
+            display: flex;
+            flex-direction: column;
+            img{
+              @include wh(50px, 50px);
+            }
+            p{
+              @include font(12px, $font-color, center);
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .baseInfo{
+    padding: 20px;
+    p{
+      color: $theme-color3;
+    }
+    .form{
+      margin-top: 30px;
+      img{
+        @include wh(60px, 60px)
+      }
+    }
+    .saveBtn{
+      margin-left: 160px;
+    }
+  }
+  .classfiy{
+    border-bottom: 2px solid #e1e1e1;
+    .item{
+      width: 120px;
+      text-align: center;
+      color: #5E625E;
+      font-size: 12px;
+      height: 40px;
+      padding: 10px 0;
+      cursor: pointer;
+      .itemWrap{
+        border-right: 1px solid #e1e1e1;
+        width: 100%;
+        text-align: center;
+      }
+      span{
+        color: #ff7300;
+      }
+    }
+  }
+  .active{
+    color: #FF7300 !important;
+  }
+}
+:global{
+  .ant-form-item{
+    margin-bottom: 12px;
+  }
+}

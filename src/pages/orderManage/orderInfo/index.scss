@@ -1,0 +1,211 @@
+@import '../../../style/main.scss';
+.orderInfoWrap{
+  .fontColor{
+    color: $theme-color3 !important;
+  }
+  padding: 0 20px;
+  padding-bottom: 20px;
+  .pageHead{
+    padding: 10px 0;
+    @include font(12px, $font-color, '');
+    cursor: pointer;
+    width: 100px;
+  }
+  .detailWrap{
+    display: flex;
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    .detailLeft{
+      width: 26.6%;
+      border-right: 1px solid #e1e1e1;
+      .detailTitle{
+        height: 31px;
+        line-height: 31px;
+        background: #F7F9F9;
+        @include font(14px, $font-color, '');
+        font-weight: bold;
+        width: 100%;
+        padding-left: 10px;
+        border-bottom: 1px solid #e1e1e1;
+      }
+      .detailContent{
+        padding: 10px;
+        @include font(12px, $font-color, '');
+        ul{
+          li{
+            display: flex;
+            margin: 10px 0;
+            span{
+              display: inline-block;
+              width: 176px;
+            }
+          }
+        }
+      }
+    }
+    .detailRight{
+      width: 73.4%;
+      padding: 70px 90px;
+    }
+  }
+  .tableWrap{
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    .head{
+      height: 40px;
+      background: #F7F9F9;
+      border-bottom: 1px solid #e1e1e1;
+      ul{
+        height: 100%;
+        display: flex;
+        li{
+          text-align: center;
+          line-height: 40px;
+        }
+        li:first-child{
+          width: 339px;
+          
+        }
+        li:nth-child(2){
+          width: 143px;
+        }
+        li:nth-child(3){
+          width: 143px;
+        }
+        li:last-child{
+          width: 335px;
+        }
+      }
+    }
+    .content{
+      font-size: 12px;
+      .td:not(:last-child){
+        border-bottom: 1px solid #e1e1e1;
+      }
+      .moreInfo{
+        cursor: pointer;
+        height: 30px;
+        line-height: 30px;
+        @include font(12px, #adadad, center);
+        .moreIcon{
+          transition: all .3s;
+        }
+        .tranformTop{
+          transform: rotate(-180deg);
+        }
+      }
+      .td{
+        height: 100px;
+        display: flex;
+          .goodsDetail{
+            width: 627px;
+            border-right: 1px solid #e1e1e1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .imgtitle{
+              width: 339px;
+              display: flex;
+              align-items: center;
+              img{
+                @include wh(50px, 50px);
+                margin: 0 20px 0 30px;
+              }
+              .title{
+                p{
+                  width: 200px;
+                  @include overflow(2);
+                }
+                p:nth-child(2){
+                  color: #adadad;
+                  margin-top: 10px;
+                }
+              }
+            }
+            .goodsPrice{
+              width: 143px;
+              text-align: center;
+              .linePrice{
+                text-decoration: line-through;
+                color: #adadad;
+              }
+            }
+            .amount{
+              text-align: center;
+              width: 143px;
+            }
+          }
+        }
+        .price{
+          width: calc(100% - 627px);
+          text-align: center;
+          line-height: 100px;
+        }
+    }
+  }
+  .total{
+    display: flex;
+    justify-content: flex-end;
+    .liIcon{
+      color: #e1e1e1;
+      margin-top: 2px;
+      margin-right: 5px;
+    }
+    ul{
+      width: 480px;
+      .line{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 1px;
+        background: -webkit-linear-gradient(left, rgba(255,255,255, 0.09),#e1e1e1); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, rgba(255,255,255, 0.09) ,#e1e1e1); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right,rgba(255,255,255, 0.09) ,#e1e1e1); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, rgba(255,255,255, 0.09), #e1e1e1); /* 标准的语法（必须放在最后） */
+      }
+      li{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 10px 0;
+        .title{
+          @include font(12px, #adadad, '')
+        }
+        .price{
+          @include font(12px, $font-color, right);
+          width: 100px;
+        }
+        .tipsWrap{
+          display: flex;
+          align-items: center;
+          &:hover{
+            .tips{
+              display: block;
+            }
+          }
+          .tips{
+            transition: all .3s;
+            font-size: 10px;
+            color: #4A4A4A;
+            letter-spacing: -0.11px;
+            text-align: center;
+            padding:  3px;
+            border: 1px solid #E1E1E1;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
+            border-radius: 3px;
+            margin-right: 5px;
+            display: none;
+          }
+        }
+      }
+      li:last-child{
+        .title{
+          font-weight: bold;
+        }
+        .price{
+          @include font(16px, $theme-color3, right);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../style/main.scss';
+.paySuccessWrapper{
+  height: 100%;
+  width: 100%;
+  padding-top: 65px;
+  .content{
+    padding-top: 70px;
+    padding-bottom: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .successIcon{
+    
+  }
+  p{
+    @include font(14px, #5E625E)
+  }
+  .mt18{
+    margin-top: 18px;
+  }
+  .btns{
+    margin-top: 50px;
+  }
+  .look{
+    margin-right: 50px;
+  }
+}

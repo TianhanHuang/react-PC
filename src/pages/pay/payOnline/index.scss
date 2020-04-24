@@ -1,0 +1,63 @@
+@import '../../../style/main.scss';
+.PayOnline{
+  padding-top: 70px;
+  .payOnlineContent{
+    margin: 0 auto;
+    // width: 1020px;
+    padding: 30px 90px;
+    background: white;
+    .bank{
+      .box{
+        background: #FFFFFF;
+        box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.30);
+        border-radius: 5px;
+        color: $theme-color3;
+        @include wh(16px, 16px);
+        line-height: 16px;
+        margin-right: 10px;
+      }
+      .bankWrap{
+        @include wh(165px, 40px);
+        border: 1px solid #E1E1E1;
+        .bankName{
+          width: 90.9%;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .bankType{
+          width: 9.1%;
+          background: #F7F9F9;
+          font-size: 10px;
+          color: #ADADAD;
+          text-align: center;
+          border-left: 1px solid #e1e1e1;
+        }
+      }
+    }
+  }
+  .btns{
+    margin: 50px 43.6%;
+    background: $theme-color3;
+    border-color: $theme-color3;
+    &.hover{
+      border-color: $theme-color3;
+    }
+  }
+}
+:global{
+  .ant-table-tbody{
+    td{
+      vertical-align: middle;
+    }
+  }
+  .ant-table-thead{
+      & > tr {
+        th{
+          background: $theme-color2;
+          color: white
+        }
+      }
+  }
+}

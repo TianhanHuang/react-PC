@@ -1,0 +1,55 @@
+// 变量
+$theme-color: #F9A447;
+$theme-color2: #ffae2b;
+$theme-color3: #ff8008;
+$theme-color4: #E1E1E1;
+$primary-color: #ff8008;
+$font-color: #5E625E;
+// 方法
+// 溢出 省略号
+@mixin overflow ($val) {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $val;
+}
+
+// 元素长宽
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+  }
+  
+// 字体颜色,大小, 水平布局
+@mixin font($size: .24rem, $color: rgb(165, 155, 155), $text-align: left){
+    font-size: $size;
+    color: $color;
+    text-align: $text-align;
+}
+
+// flex布局
+@mixin flex($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+/*绝对定位  参数顺序：上右下左*/
+@mixin position($type: null, $top:null,$right:null,$bottom:null,$left:null) {
+    position: $type;
+    @if ($left!="" & & $left!=null) {
+      left: $left;
+    }
+    @if ($right!="" & & $right!=null) {
+      right: $right;
+    }
+    @if ($top!="" & & $top!=null) {
+      top: $top;
+    }
+    @if ($bottom!="" & & $bottom!=null) {
+      bottom: $bottom;
+    }
+}  

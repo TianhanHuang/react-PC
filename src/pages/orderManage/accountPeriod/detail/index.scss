@@ -1,0 +1,47 @@
+@import '../../../../style/main.scss';
+.accountPeriodDetail{
+  padding: 10px 30px;
+  .pageHead{
+    span{
+      cursor: pointer;
+    }
+  }
+  .periodWrap2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    .row1{
+      color: #ADADAD;
+      margin-top: 15px !important;
+    }
+    .timeChoose{
+      font-size: 12px;
+      color: #ADADAD;
+      .item{
+        background: #f4f4f4;
+        padding: 3px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+  .periodWrap{
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    .content{
+      padding: 10px;
+      .row{
+        margin-top: 15px;
+      }
+    }
+    .head{
+      height:31px;
+      border-bottom: 1px solid #e1e1e1;
+      background:rgba(247,249,249,1);
+      line-height: 31px;
+      padding-left: 10px;
+      @include font(12px, $font-color, left);
+      font-weight: bold;
+    }
+  }
+}
